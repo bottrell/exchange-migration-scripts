@@ -16,7 +16,7 @@ Example: `.\check-machinedomain.bat lt-csc15`
 
 Output: `Domain:                    camc.hsi`
 
-## Get-CPUU-logs.ps1
+## Get-CPUU-logs.ps1 (TODO)
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
@@ -24,7 +24,7 @@ Output: `Domain:                    camc.hsi`
 Example:
 Output: 
 
-## check-userdomain.ps1
+## check-userdomain.ps1(TODO)
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
@@ -32,7 +32,7 @@ Output:
 Example:
 Output: 
 
-## check-userdomain.bat
+## check-userdomain.bat(TODO)
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
@@ -40,7 +40,7 @@ Output:
 Example:
 Output:
 
-## prompt-restart.ps1 (WIP)
+## prompt-restart.ps1 (WIP)(TODO)
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
