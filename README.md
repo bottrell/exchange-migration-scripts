@@ -16,21 +16,41 @@ Example: `.\check-machinedomain.bat lt-csc15`
 
 Output: `Domain:                    camc.hsi`
 
-## Get-CPUU-logs.ps1 (TODO)
+## Get-CPUU-logs.ps1
+### Purpose
+- To generate a dynamic dashboard which shows the current migration progress. Pulls log data from the Quest drive which is only generated after CPUU success.
+### Prerequisites 
+- Must have access to the CPUU logs drive (should be \\usd1\logfiles$\Quest for this project)
+- Must exist in a folder with an appropriately formatted workstations.csv file
+### Usage
+`.\Get-CPUU-logs.ps1 <workstations.csv>`
+
+Example: `.\Get-cpuu-logs.ps1 1124workstations.csv`
+
+Output: **************************
+        Machine Name: MEM-LABLIB02PC
+        Migration Status: Not started
+        Migration Completed: False
+        **************************
+        Machine Name: MEM-CENTAPL08PC
+        Migration Status: Completed
+        Migration Completed: True
+        ************************** 
+
+## check-userdomain.ps1
+### Purpose
+- Essentially the same as running "whoami" on the targetted machine to quickly find out which domain the user is logged-in to 
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
+- User must be logged into the machine
 
-Example:
-Output: 
+### Usage
+`.\check-userdomain.ps1 <machinename>`
 
-## check-userdomain.ps1(TODO)
-### Prerequisites 
-- Machines must be connected to the network (either vpn or on-site)
-- Machine must be turned on
+Example: `.\check-userdomain.ps1 lt-csc15`
 
-Example:
-Output: 
+Output: `User jbottrell is in domain CAMC`
 
 ## check-userdomain.bat(TODO)
 ### Prerequisites 
