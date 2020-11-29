@@ -52,15 +52,18 @@ Example: `.\check-userdomain.ps1 lt-csc15`
 
 Output: `User jbottrell is in domain CAMC`
 
-## check-userdomain.bat(TODO)
+## check-userdomain.bat
+### Purpose
+- Another way to run "whoami" remotely on the targeted machine to find out which domain the user is logged-in to
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
+- User must be logged into the machine
 
-Example:
-Output:
+Example: `.\check-userdomain.bat lt-csc15`
+Output: `UserName: icamc\jbottrell`
 
-## prompt-restart.ps1 (WIP)(TODO)
+## prompt-restart.ps1 (WIP)
 ### Prerequisites 
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
