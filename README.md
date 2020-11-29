@@ -59,7 +59,7 @@ Output: `User jbottrell is in domain CAMC`
 - Machines must be connected to the network (either vpn or on-site)
 - Machine must be turned on
 - User must be logged into the machine
-
+### Usage `.\check-userdomain.bat <machinename>`
 Example: `.\check-userdomain.bat lt-csc15`
 Output: `UserName: icamc\jbottrell`
 
