@@ -23,7 +23,7 @@ foreach ($file in $files) {
     if (($file -like "*$date*") -and ($file -like "*$type*"))  {
         
         #Import the data from the input file and append to the output file
-        $imported = Import-Csv $file | Select-Object -Skip 1
+        $imported = Import-Csv $file
         $imported | Export-Csv -append $outputfilename
 
     }
